@@ -10,7 +10,12 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface WebhookTrigger {}
+  interface WebhookTrigger {
+    'method': string;
+    'name': string;
+    'params': any;
+    'url': string;
+  }
 }
 
 declare global {
@@ -27,7 +32,12 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface WebhookTrigger {}
+  interface WebhookTrigger {
+    'method'?: string;
+    'name'?: string;
+    'params'?: any;
+    'url'?: string;
+  }
 
   interface IntrinsicElements {
     'webhook-trigger': WebhookTrigger;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
@@ -9,7 +10,14 @@
   <script nomodule src="/build/webhook-trigger.js"></script>
 
 </head>
+
 <body>
-  <webhook-trigger first="Stencil" last="'Don't call me a framework' JS"></webhook-trigger>
+  <webhook-trigger
+    name="Trigger this one"
+    url="http://dummy.restapiexample.com/api/v1/create"
+    method="post"
+  >
+  </webhook-trigger>
 </body>
+
 </html>
