@@ -1,3 +1,20 @@
-:host {
-  display: block;
+.trigger {
+  background-color: #74b9ff;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border-bottom: 3px solid #4a8dcf;
+  border-radius: 4px;
+}
+
+.trigger:hover {
+  background-color: #539be2;
+  border-bottom: 3px solid #2e6397;
+}
+
+.trigger:active {
+  background-color: #2e6397;
+  border-bottom: 3px solid #2e6397;
 }

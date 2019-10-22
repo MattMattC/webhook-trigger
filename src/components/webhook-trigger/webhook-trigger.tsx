@@ -9,7 +9,7 @@ export class WebhookTrigger {
 
   render() {
     return (
-      <div>
+      <div class="trigger">
         WebhookTrigger
       </div>
     );
